@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://kit.fontawesome.com/1c76e0bacb.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Personal Portfolio Website</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#main">
+                <img src="images/logo.png">
+            </a>
+        </div>
+        <ul>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="menuButton" onclick="openMenu()">
+            <i class='bx bx-menu'></i>
+        </button>
+    </nav>
+    <div class="main" id="main">
+        <div class="left">
+            <p>Backend Developer</p>
+            <h1>
+              Hi, I'm <span>Josua</span><br />
+              Iwanda from Pekanbaru
+            </h1>
+        </div>
+        <div class="right">
+            <img src="images/header-img.png">
+        </div>
+    </div>
+    <div class="skills" id="skills">
+        <h5>My Skills</h5>
+        <h3>What I do!</h3>
+        <div class="skill-items">
+            <div class="item">
+                <div class="icon"><i class='bx bx-code-alt'></i></div>
+                <h4>Web Development</h4>
+                <p>
+                    Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It may, however, also include web design, web programming, and database management.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bxl-figma'></i></i></div>
+                <h4>UI & UX Design</h4>
+                <p>
+                    UX & UI design. UX design refers to the term “user experience design”, while UI stands for “user interface design”. Both elements are crucial to a product and work closely together.
+                </p>
+            </div>
+            <div class="item">
+                <div class="icon"><i class='bx bxl-android'></i></div>
+                <h4>App Development</h4>
+                <p>
+                    Application development, or app development, is the process of planning, designing, creating, testing, and deploying a software application to perform various business operations
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="left">
+            <img src="images/about-img.png">
+        </div>
+        <div class="right">
+            <h5>About</h5>
+            <h3>About Me</h3>
+            <p>
+                Hi, my name is Josua iwanda and i have recently completed a Bachelor of Computer Science, majoring in Informatics Engineering at Riau Islamic University. Currently working as a logistics warehouse operator and also taking part in the Full-Stack Web Developer bootcamp program to deepen skills in Web Developer. A detail-oriented individual who desires a full-time opportunity in Full-Stack Web Development.
+            </p>
+        </div>
+    </div>   
+    <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1>Contact Me</h1>
+              <p><i class="fas fa-paper-plane"></i>josuaiwandasitumorang@gmail.com</p>
+              <p><i class="fas fa-phone-square-alt"></i>+62 81381592743</p>
+              <div class="social-icons">
+                <a href="https://facebook.com/" target="_blank"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="http://www.linkedin.com/in/josua-iwanda" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Josua174" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required />
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your Message"
+                ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer>
+        <div class="copyright">
+            <p>Copyright &copy; Josua Iwanda.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
